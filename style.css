@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Righteous&display=swap');
+
+@keyframes bgcolor {
+    0% { background: linear-gradient(135deg, #45a3e5, #1a2a6c); }
+    30% { background: linear-gradient(135deg, #66bf39, #1a2a6c); }
+    60% { background: linear-gradient(135deg, #eb670f, #b21f1f); }
+    90% { background: linear-gradient(135deg, #f35, #b21f1f); }
+    100% { background: linear-gradient(135deg, #864cbf, #fdbb2d); }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  animation: bgcolor 20s infinite alternate;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1, h2 {
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #fdbb2d;
+}
+
+img {
+  display: block;
+  max-width: 180px;
+  border-radius: 50%;
+  margin: 30px auto;
+  border: 4px solid #fdbb2d;
+  box-shadow: 0 0 25px rgba(253, 187, 45, 0.3);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.2em;
+  margin: 25px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+.highlight {
+  background: linear-gradient(45deg, #fdbb2d, #b21f1f);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.button-section button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 2px solid #fdbb2d;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.button-section button:hover {
+  background: #fdbb2d;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(253, 187, 45, 0.4);
+}
+
+#game-area {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.cipher-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  backdrop-filter: blur(5px);
+}
+
+.input-section {
+  margin-top: 25px;
+}
+
+.input-section label {
+  display: block;
+  margin-top: 15px;
+  color: #fdbb2d;
+  font-weight: 600;
+}
+
+.input-section textarea,
+.input-section input,
+.input-section select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-section button {
+  margin-top: 25px;
+  width: 100%;
+  background: linear-gradient(45deg, #fdbb2d, #b21f1f);
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.input-section button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(253, 187, 45, 0.3);
+}
+
+.output-section {
+  margin-top: 30px;
+  background: rgba(26, 42, 108, 0.3);
+  padding: 25px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-top: 10px;
+}
